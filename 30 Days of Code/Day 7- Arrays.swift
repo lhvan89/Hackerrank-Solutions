@@ -1,5 +1,3 @@
-
-
 import Foundation
 
 guard let n = Int((readLine()?.trimmingCharacters(in: .whitespacesAndNewlines))!)
@@ -13,6 +11,9 @@ let arr: [Int] = arrTemp.split(separator: " ").map {
 }
 
 guard arr.count == n else { fatalError("Bad input") }
+
+
+// Solution Here
 
 var arrResult = [String]()
 for i in arr.reversed() {
