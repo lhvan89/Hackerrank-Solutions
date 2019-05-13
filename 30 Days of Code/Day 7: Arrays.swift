@@ -1,7 +1,7 @@
 import Foundation
 
 guard let n = Int((readLine()?.trimmingCharacters(in: .whitespacesAndNewlines))!)
-    else { fatalError("Bad input") }
+else { fatalError("Bad input") }
 
 guard let arrTemp = readLine() else { fatalError("Bad input") }
 let arr: [Int] = arrTemp.split(separator: " ").map {
@@ -12,12 +12,7 @@ let arr: [Int] = arrTemp.split(separator: " ").map {
 
 guard arr.count == n else { fatalError("Bad input") }
 
-
-// Solution Here
-
-var arrResult = [String]()
+// Solutions Here
 for i in arr.reversed() {
-    arrResult.append(String(i))
+    print(i, terminator: " ")
 }
-
-print(arrResult.joined(separator: " "))
